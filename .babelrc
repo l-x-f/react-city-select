@@ -1,0 +1,28 @@
+{
+    "presets": [
+        "react-app"
+    ],
+    "env": {
+        "development": {
+            "plugins": [
+                "dynamic-import-node"
+            ]
+        }
+    },
+    "plugins": [
+        [
+            "@babel/plugin-proposal-decorators",
+            {
+                "legacy": true
+            }
+        ],
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "libraryDirectory": "es",
+                "style": "css"
+            }
+        ]
+    ]
+}
